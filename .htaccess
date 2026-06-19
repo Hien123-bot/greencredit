@@ -1,0 +1,11 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /green_credit/
+
+# Điều hướng API
+RewriteRule ^api/(.*)$ api/$1.php [L]
+
+# Điều hướng các trang chính
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
