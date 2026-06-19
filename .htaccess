@@ -1,7 +1,7 @@
 Options -Indexes
 RewriteEngine On
-RewriteBase /green_credit/
 
+# Relative rewrite targets work both in a subdirectory and at the domain root.
 # Điều hướng API
 RewriteRule ^api/(.*)$ api/$1.php [L]
 

@@ -3,9 +3,11 @@
  * Green Credit Helper Functions
  */
 
+require_once __DIR__ . '/config.php';
+
 if (!function_exists('base_url')) {
     function base_url($path = '') {
-        return '/green_credit/' . ltrim($path, '/');
+        return BASE_URL . ltrim($path, '/');
     }
 }
 

@@ -6,7 +6,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 mb-40">
             <!-- Brand & Mission -->
             <div class="lg:col-span-5" data-aos="fade-right">
-                <a href="index.php" class="flex items-center gap-4 mb-10">
+                <a href="<?= BASE_URL ?>index.php" class="flex items-center gap-4 mb-10">
                     <div class="w-16 h-16 bg-[#22c55e] rounded-[24px] flex items-center justify-center text-[#123321] shadow-[0_20px_50px_rgba(34,197,94,0.4)]">
                         <span class="material-symbols-outlined font-black text-4xl">eco</span>
                     </div>
@@ -36,16 +36,16 @@
                 <div>
                     <h5 class="text-[11px] font-black text-[#22c55e] uppercase tracking-[0.5em] mb-12">Hệ sinh thái</h5>
                     <ul class="space-y-8">
-                        <li><a href="tasks.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Danh sách nhiệm vụ</a></li>
-                        <li><a href="rewards.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Cửa hàng đổi quà</a></li>
+                        <li><a href="<?= BASE_URL ?>tasks.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Danh sách nhiệm vụ</a></li>
+                        <li><a href="<?= BASE_URL ?>rewards.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Cửa hàng đổi quà</a></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="text-[11px] font-black text-[#22c55e] uppercase tracking-[0.5em] mb-12">Tài nguyên</h5>
                     <ul class="space-y-8">
-                        <li><a href="news.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Tin tức & Sự kiện</a></li>
-                        <li><a href="about.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Về chúng tôi</a></li>
-                        <li><a href="contact.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Liên hệ</a></li>
+                        <li><a href="<?= BASE_URL ?>news.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Tin tức & Sự kiện</a></li>
+                        <li><a href="<?= BASE_URL ?>about.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Về chúng tôi</a></li>
+                        <li><a href="<?= BASE_URL ?>contact.php" class="text-white/40 hover:text-white font-black text-xs uppercase tracking-widest transition-all">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="col-span-2 md:col-span-1">
@@ -113,7 +113,7 @@
         }
     });
 </script>
-<script src="assets/js/main.js"></script>
+<script src="<?= BASE_URL ?>assets/js/main.js"></script>
 <?php require_once __DIR__ . '/toasts.php'; ?>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
